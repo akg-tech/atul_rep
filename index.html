@@ -20,6 +20,25 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .logo {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            background-color: #28a745; /* Green background */
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .logo .icon {
+            font-size: 65px;
+            margin-right: 10px;
+        }
+
 
         header {
             color: white;
@@ -74,6 +93,16 @@
             width: 300px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        .card1{
+            background: grey;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
 
         .card img {
             max-width: 100%;
@@ -84,18 +113,6 @@
         .card h3 {
             margin: 15px 0 10px;
         }
-
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        /* #gym{ */
-          /* height: 250px; */
-          /* width: 250px; */
-        
         #button{
           position: relative;
           top: 35px;
@@ -107,25 +124,26 @@
     </style>
 </head>
 <body>
+    <div class="logo">
+        <div class="icon">🏋️‍♂️</div>
+    </div>
+
 
 <header>
     <h1>Welcome to !COCKS FITNESS CLUB</h1>
     <p>Your journey to fitness starts here!</p>
 </header>
-
 <nav>
     <a href="#classes">Classes</a>
     <a href="#trainers">Trainers</a>
     <a href="#membership">Membership</a>
     <a href="#blog">Blog</a>
 </nav>
-
 <div class="hero">
     <h1>Transform Your Body, Transform Your Life</h1>
     <p>Join our fitness club and take the first step towards a healthier you.</p>
     <button id="button"><a href="form.html">Join Now</a></button>
 </div>
-
 <section id="classes" class="section">
     <h2>Our Classes</h2>
     <div class="cards">
@@ -139,14 +157,15 @@
             <h3>Strength Training</h3>
             <p>Build your muscles and improve your endurance.</p>
         </div>
-        <div class="card">
-            <img src="zumba.jpeg" alt="Zumba">
-            <h3>Zumba</h3>
-            <p>Dance your way to fitness with fun and energetic Zumba classes.</p>
-        </div>
+        
     </div>
 </section>
-
+<section id="classes" class="section">
+  <center>  <div class="card">
+        <img src="zumba.jpeg" alt="Zumba">
+        <h3>Zumba</h3>
+        <p>Dance your way to fitness with fun and energetic Zumba classes.</p>
+        </div></center>
 <section id="trainers" class="section">
     <h2>Meet Our Trainers</h2>
     <div class="cards">
@@ -162,7 +181,6 @@
         </div>
     </div>
 </section>
-
 <section id="membership" class="section">
     <h2>Membership Plans</h2>
     <div class="cards">
@@ -180,14 +198,12 @@
         </div>
     </div>
 </section>
-
 <section id="blog" class="section">
     <h2>Fitness Tips</h2>
     <div class="cards">
         <div class="card">
             <video width="312" height="240" controls>
                 <source src="gym1.mp4" type="video/mp4">
-                
               </video>
             <h3>10 Easy Exercises for Beginners</h3>
             <p>Start your fitness journey with these simple exercises.</p>
@@ -201,10 +217,5 @@
         </div>
     </div>
 </section>
-
-<footer>
-    <p>!COCKS FITNESS CLUB &copy; 2024. All Rights Reserved.</p>
-</footer>
-
 </body>
 </html>
