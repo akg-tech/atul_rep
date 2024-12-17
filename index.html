@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Club</title>
     <style>
+        *{
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: red;
+        }
         /* Global Styles */
         body {
             font-family: Arial, sans-serif;
@@ -14,7 +22,6 @@
         }
 
         header {
-            background: #333;
             color: white;
             padding: 10px 20px;
             text-align: center;
@@ -23,7 +30,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background: #555;
+    
         }
 
         nav a {
@@ -39,7 +46,7 @@
 
         .hero {
   
-            color: rgb(53, 49, 49);
+            color: red;
             text-align: center;
             padding: 100px 20px;
         }
@@ -61,7 +68,7 @@
         }
 
         .card {
-            background: #f4f4f4;
+            background: grey;
             padding: 20px;
             border-radius: 8px;
             width: 300px;
@@ -116,7 +123,7 @@
 <div class="hero">
     <h1>Transform Your Body, Transform Your Life</h1>
     <p>Join our fitness club and take the first step towards a healthier you.</p>
-    <button id="button">Join Now</button>
+    <button id="button"><a href="form.html">Join Now</a></button>
 </div>
 
 <section id="classes" class="section">
@@ -128,7 +135,7 @@
             <p>Relax and rejuvenate with our expert-led yoga sessions.</p>
         </div>
         <div class="card">
-            <img src="bg.jpg" alt="Strength Training">
+            <img src="strenght1.jpeg" alt="Strength Training">
             <h3>Strength Training</h3>
             <p>Build your muscles and improve your endurance.</p>
         </div>
@@ -178,7 +185,7 @@
     <h2>Fitness Tips</h2>
     <div class="cards">
         <div class="card">
-            <video width="320" height="240" controls>
+            <video width="312" height="240" controls>
                 <source src="gym1.mp4" type="video/mp4">
                 
               </video>
@@ -186,7 +193,7 @@
             <p>Start your fitness journey with these simple exercises.</p>
         </div>
         <div class="card">
-            <video>
+            <video width="312" height="240" controls>
                 <source src="gym2.mp4" type="video/mp4">
                 </video>
             <h3>Healthy Eating Habits</h3>
